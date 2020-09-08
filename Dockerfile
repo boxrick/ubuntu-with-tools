@@ -12,7 +12,8 @@ RUN apt-get update && \
          git \
          iputils-ping \
          netcat \
-         unzip
+         unzip \
+         awscli
 
 # Clean system
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
