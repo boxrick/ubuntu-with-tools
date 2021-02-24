@@ -13,7 +13,8 @@ RUN apt-get update && \
          iputils-ping \
          netcat \
          unzip \
-         awscli
+         awscli \
+         python3-pip
 
 # Clean system
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
