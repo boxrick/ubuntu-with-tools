@@ -35,7 +35,9 @@ RUN apt-get update && \
          iputils-ping \
          netcat \
          unzip \
-         python3-pip
+         python3-pip \
+         software-properties-common \
+         gnupg
 
 # Copy AWS Cli from previous image
 COPY --from=installer /usr/local/aws-cli/ /usr/local/aws-cli/
